@@ -1,21 +1,22 @@
 {
-  "name": "minio",
+  "name": "@finduspt/minio",
   "version": "7.0.33",
   "description": "S3 Compatible Cloud Storage client",
   "main": "./dist/main/minio.js",
   "scripts": {
+    "build:release": "gulp compile",
     "compile": "gulp compile",
     "test": "gulp test",
     "lint": "gulp lint",
     "lint-fix": "gulp lint --fix",
-    "prepublishOnly": "gulp test",
+    "prepublishOnly1": "gulp test",
     "functional": "gulp functionalTest",
     "browserify": "gulp browserify",
     "prepare": "npm run compile"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/minio/minio-js.git"
+    "url": "git+https://github.com/findus-immobilien/minio-js.git"
   },
   "author": {
     "name": "MinIO, Inc.",
@@ -23,7 +24,7 @@
     "url": "https://min.io"
   },
   "engines": {
-    "node": ">8  <=18"
+    "node": ">8  <=20"
   },
   "license": "Apache-2.0",
   "bugs": {
